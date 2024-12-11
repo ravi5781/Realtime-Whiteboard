@@ -1,0 +1,47 @@
+body {
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+.tool-img {
+  height: 4rem;
+}
+
+.toolbar-options {
+  display: flex;
+  background-color: #333;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.sticky {
+  height: 10rem;
+  width: 6rem;
+  position: absolute;
+  left: 40vw;
+  top: 40vh;
+}
+
+.nav {
+  border: 1px solid black;
+  background-color: bisque;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10%;
+}
+.text-area {
+  height: 80%;
+  width: 100%;
+}
+.input-tag {
+  display: none;
+}
+.upload-img {
+  height: 80%;
+  width: 100%;
+}

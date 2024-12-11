@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realtime Whiteboard</title>
+
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="cross"></div>
+      <div class="toolbar-options">
+        <div class="tool" id="pencil">
+          <img src="./NewIcons/Black_Pencil.svg" class="tool-img" alt="" />
+          <div id="pencilControls" style="display: none">
+            <input type="color" id="colorPicker" value="#000000" />
+            <input type="range" id="lineWidth" min="1" max="10" value="1" />
+          </div>
+        </div>
+
+        <div class="tool" id="eraser">
+          <img src="./NewIcons/Eraser.svg" class="tool-img" alt="" />
+        </div>
+        <div class="tool" id="sticky">
+          <img src="./NewIcons/StickyNote.svg" class="tool-img" alt="" />
+        </div>
+        <div class="tool" id="upload">
+          <img src="./NewIcons/Photo.svg" class="tool-img" alt="" />
+        </div>
+        <div class="tool" id="download">
+          <img src="./NewIcons/Download.svg" class="tool-img" alt="" />
+        </div>
+        <div class="tool" id="undo">
+          <img src="./NewIcons/Undo.svg" class="tool-img" alt="" />
+        </div>
+        <div class="tool" id="redo">
+          <img src="./NewIcons/Redo.svg" class="tool-img" alt="" />
+        </div>
+      </div>
+      <!--for file upload-->
+      <input type="file" class="input-tag" />
+    </div>
+
+    <!-- canvas element is used for drawing purpose   -->
+    <canvas id="board"></canvas>
+
+    <script src="script.js" alt=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="server.js" alt=""></script>
+  </body>
+</html>
